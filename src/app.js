@@ -12,11 +12,11 @@ const days = [
   "Saturday",
 ];
 const day = days[now.getDay()];
-const hours = now.getHours();
+let hours = now.getHours();
 if (hours < 10) {
   hours = `0${hours}`;
 }
-const minutes = now.getMinutes();
+let minutes = now.getMinutes();
 if (minutes < 10) {
   minutes = `0${minutes}`;
 }

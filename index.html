@@ -25,15 +25,12 @@
     <title>WeatherApp</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container pt-4 pb-2 px-4">
+      <h2 class="text-center mb-2">Wish you good Weather today</h2>
+
       <div class="row">
         <div class="col">
-          <h1>Wish you good Weather today</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="input-group mb-3 input-group-lg">
+          <div class="input-group mb-3">
             <input
               type="text"
               class="form-control"
@@ -43,14 +40,18 @@
               aria-describedby="button-search"
             />
             <button
-              class="btn btn-outline-secondary"
+              type="button"
+              class="btn btn-outline-success"
+              id="button-current"
+            >
+              <i class="fa-solid fa-location"></i>
+            </button>
+            <button
+              class="btn btn-outline-success"
               type="button"
               id="button-search"
             >
               Search
-            </button>
-            <button type="button" class="btn btn-warning" id="button-current">
-              Current
             </button>
           </div>
         </div>
@@ -60,7 +61,7 @@
         <div class="row">
           <div class="col"><h4 class="text-center">Date, time</h4></div>
         </div>
-        <div class="row my-5">
+        <div class="row">
           <div class="col">
             <div class="d-flex justify-content-center">
               <div class="">
@@ -107,20 +108,23 @@
           <i class="fa-solid fa-smog weather-icon"></i>19°C
         </div>
       </div>
-      <div class="row my-5">
+      <!-- <div class="row mt-3">
         <div class="col">
           <div class="d-flex justify-content-center">
             <button type="button" class="btn btn-warning">Next 5 days</button>
           </div>
         </div>
+      </div> -->
+      <div id="footer" class="footer mt-5 text-end">
+        <small>
+          <a href="https://github.com/TanyaOv/WeatherApp" target="_blank">
+          Open-source code
+        </a>
+        by Tanya Ovcharenko
+        </small>
       </div>
     </div>
-    <div id="footer" class="footer">
-      <a href="https://github.com/TanyaOv/WeatherApp" target="_blank"
-        >Open-source code</a
-      >
-      by Tanya Ovcharenko
-    </div>
+
     <script src="src/app.js"></script>
   </body>
 </html>

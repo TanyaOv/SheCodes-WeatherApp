@@ -8,6 +8,7 @@ body {
   max-width: 800px;
   margin-top: 60px;
   height: 950px;
+  border-radius: 0.5rem;
   background: #d6f5e8;
 }
 

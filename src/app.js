@@ -42,7 +42,7 @@ function showTemperature(response) {
   );
 
   currentWeather.tempC = temp;
-  currentWeather.tempF = (temp * 9) / 5 + 32;
+  currentWeather.tempF = Math.round((temp * 9) / 5 + 32);
   currentWeather.cityName = cityName;
 
   cityNameH3.innerText = cityName;

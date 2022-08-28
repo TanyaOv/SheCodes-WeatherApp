@@ -1,7 +1,7 @@
 const apiKey = "d743afc6b8e9d42ff2b1cf896acc3bf6";
 
 const now = new Date();
-const h4 = document.querySelector("h4");
+const dateTime = document.querySelector("#date-time");
 const days = [
   "Sunday",
   "Monday",
@@ -20,7 +20,7 @@ let minutes = now.getMinutes();
 if (minutes < 10) {
   minutes = `0${minutes}`;
 }
-h4.innerHTML = `${day}, ${hours}:${minutes}`;
+dateTime.innerHTML = `${day}, ${hours}:${minutes}`;
 
 const btnSearch = document.querySelector("#button-search");
 const btnCurrent = document.querySelector("#button-current");
@@ -31,7 +31,8 @@ const currentWeather = { tempC: 0, tempF: 0, cityName: "" };
 
 function showTemperature(response) {
   const tempEl = document.querySelector("#temp");
-  const cityNameH3 = document.querySelector("h3");
+  const cityNameH2 = document.querySelector("#cityName");
+  const iconElement = document.querySelector("#icon");
 
   const temp = Math.round(response.data.main.temp);
   const cityName = response.data.name;
@@ -40,12 +41,15 @@ function showTemperature(response) {
   document.querySelector("#wind").innerText = Math.round(
     response.data.wind.speed
   );
-
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
   currentWeather.tempC = temp;
   currentWeather.tempF = Math.round((temp * 9) / 5 + 32);
   currentWeather.cityName = cityName;
 
-  cityNameH3.innerText = cityName;
+  cityNameH2.innerText = cityName;
   tempEl.innerText = temp;
 }
 

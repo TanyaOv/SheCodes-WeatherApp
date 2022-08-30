@@ -26,18 +26,18 @@ ul {
   font-weight: 700;
 }
 
-.fa-sun {
+/* .fa-sun {
   font-size: 110px;
-}
+} */
 
-.weather-icon {
+/* .weather-icon {
   font-size: 40px;
   padding-right: 0.5rem;
 }
 
 .btn-warning {
   width: 260px;
-}
+} */
 
 .units {
   font-size: 22px;
@@ -47,6 +47,26 @@ ul {
 
 .units > a {
   text-decoration: none;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.weather-forecast-date {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.6;
+}
+
+.weather-forecast-temperatures {
+  font-size: 15px;
+  color: #198754;
 }
 
 #footer a {

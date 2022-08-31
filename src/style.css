@@ -1,6 +1,5 @@
 body {
   font-family: "Roboto Mono", monospace;
-  /* font-size: 30px; */
 }
 
 .container {
@@ -25,19 +24,6 @@ ul {
   font-size: 50px;
   font-weight: 700;
 }
-
-/* .fa-sun {
-  font-size: 110px;
-} */
-
-/* .weather-icon {
-  font-size: 40px;
-  padding-right: 0.5rem;
-}
-
-.btn-warning {
-  width: 260px;
-} */
 
 .units {
   font-size: 22px;

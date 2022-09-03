@@ -10,10 +10,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <script
-      src="https://kit.fontawesome.com/49dd2a2a7c.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/49dd2a2a7c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,30 +27,22 @@
 
       <div class="row">
         <div class="col">
-          <div class="input-group mb-3">
-            <input
-              type="text"
-              class="form-control"
-              id="city-name"
-              placeholder="Enter city name"
-              aria-label="City name"
-              aria-describedby="button-search"
-            />
-            <button
-              type="button"
-              class="btn btn-outline-success"
-              id="button-current"
-            >
-              <i class="fa-solid fa-location"></i>
-            </button>
-            <button
-              class="btn btn-outline-success"
-              type="button"
-              id="button-search"
-            >
-              Search
-            </button>
-          </div>
+          <form action="#" id="search-form">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="city-name"
+                placeholder="Enter city name"
+                aria-label="City name"
+                aria-describedby="button-search"
+              />
+              <button type="button" class="btn btn-outline-success" id="button-geo">
+                <i class="fa-solid fa-location"></i>
+              </button>
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </div>
+          </form>
         </div>
       </div>
       <div class="container">
@@ -77,11 +66,7 @@
 
             <span class="big-temp" id="temp">25</span>
             <span class="units">
-              <a href="#" id="celcius-link">°C</a>|<a
-                href="#"
-                id="fahrenheit-link"
-                >°F</a
-              >
+              <a href="#" id="celcius-link">°C</a>|<a href="#" id="fahrenheit-link">°F</a>
             </span>
           </div>
         </div>
@@ -94,9 +79,7 @@
 
       <div id="footer" class="footer mt-5 text-end">
         <small>
-          <a href="https://github.com/TanyaOv/WeatherApp" target="_blank">
-            Open-source code
-          </a>
+          <a href="https://github.com/TanyaOv/WeatherApp" target="_blank"> Open-source code </a>
           by Tanya Ovcharenko
         </small>
       </div>
